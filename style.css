@@ -1,0 +1,252 @@
+/*******************************Reset****************************/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*****************************Variables***********************/
+:root {
+  --bgc: #e5e5e5;
+  --clr-dark-blue: #052f77;
+  --clr-gray: #8f9baf;
+  --clr-pure-white: #ffffff;
+  --clr-nav-links: #631919;
+}
+
+/*******************************Utility Classes******************************/
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 5px 5px 20px rgba(105, 74, 74, 0.25);
+  border-radius: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--cols-6 {
+  grid-template-columns: 0.3fr 0.5fr 2fr 1fr 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+  /* column-gap: 2rem; */
+}
+
+.pd-left-2 {
+  padding-left: 2rem;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fz-1 {
+  font-size: 1.25rem;
+}
+
+.fz-2 {
+  font-size: 2.25rem;
+}
+
+.txt-blue {
+  color: var(--clr-dark-blue);
+}
+
+.txt-white {
+  color: #fcfcfc;
+}
+
+.txt-gray {
+  color: var(--clr-gray);
+}
+
+body {
+  background-color: var(--bgc);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/****************************Navbar*********************************/
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--clr-pure-white);
+  padding: 0 10rem;
+  border: 1px solid #e2e6e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .nav-links {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  /* padding: 1.875rem 0; */
+}
+
+.navbar ul {
+  justify-content: center;
+  align-items: center;
+  column-gap: 2.8125rem;
+}
+
+.navbar a:link,
+.navbar a:visited {
+  color: var(--clr-nav-links);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:link.profile-link,
+.navbar a:visited.profile-link {
+  background-color: #f2f2fd;
+  padding: 9px 9px;
+  border-radius: 50%;
+}
+
+/***********************************Top 3************************************/
+
+.main {
+  margin-top: 7rem;
+  padding: 0 7rem;
+}
+
+.toppers > p {
+  margin: 3rem;
+}
+
+.top-three {
+  grid-template-columns: 1fr 1.2fr 1fr;
+  column-gap: 2rem;
+}
+
+.topper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.5rem;
+  padding: 1rem;
+  border: none;
+}
+
+.topper--second-position {
+  background: linear-gradient(#c1ebfd 40%, #ffffff 40% 100%);
+}
+
+.topper--first-position {
+  background: linear-gradient(#0052cc 40%, #ffffff 40% 100%);
+}
+
+.topper--third-position {
+  background: linear-gradient(#c1ebfd 40%, #ffffff 40% 100%);
+}
+
+.topper-image {
+  border-radius: 50%;
+}
+
+/********************************My Rank******************************/
+
+.section-my-rank {
+  margin: 4rem 0;
+}
+
+.section-my-rank > p {
+  margin-bottom: 2rem;
+}
+
+.display-none {
+  opacity: 0;
+}
+
+.user-image {
+  border-radius: 50%;
+}
+
+.list-headings {
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+.user-row-card {
+  padding: 0.5rem 0 0.5rem 2rem;
+  background: #ffffff;
+  box-shadow: 5px 5px 20px rgba(105, 74, 74, 0.25);
+  border-radius: 10px;
+}
+
+/********************************TOP 10 VOLUNTEERS*********************************/
+
+.section-top-10 {
+  margin-bottom: 3rem;
+}
+
+.section-top-10 > p {
+  margin-bottom: 2rem;
+}
+
+.leaderboard-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+}
+
+/******************************Footer******************************/
+
+.footer {
+  height: 10rem;
+  background-color: var(--clr-pure-white);
+  position: relative;
+}
+
+.hr {
+  position: absolute;
+  margin-top: 4.5rem;
+  height: 1px;
+  width: 85%;
+  background-color: #e2e6e9;
+  left: 6rem;
+}
+
+.footer p {
+  position: absolute;
+  right: 6.5rem;
+  top: 4.8rem;
+  color: #74809a;
+  font-size: 14px;
+}

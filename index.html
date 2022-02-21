@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="./script.js" defer></script>
+    <title>Leaderboard</title>
+  </head>
+  <body>
+    <nav class="navbar container">
+      <div class="nav-links flex-row">
+        <p><a href="./index.html">Home</a></p>
+        <ul class="flex-row">
+          <li><a class="fw-500" href="./index.html">Activites</a></li>
+          <li><a class="fw-500" href="./projects.html">Projects</a></li>
+          <li><a class="fw-500" href="./leadership.html">Leadership</a></li>
+          <li><a href="#" class="profile-link fw-500">SR</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="container txt-blue">
+        <!----------------------------------TOPPERS------------------------------>
+        <section class="toppers">
+          <p class="text-center fw-600 fz-2">Leaderboard</p>
+          <div class="top-three grid">
+            <div class="topper topper--second-position card">
+              <div class="topper-position fw-600">2nd Position</div>
+              <div class="image">
+                <img
+                  class="topper-image"
+                  src="./assets/person-img.png"
+                  alt="A person"
+                />
+              </div>
+              <div class="topper-name fw-600 fz-1">James Porter</div>
+              <div class="points fw-500">400</div>
+            </div>
+            <div class="topper topper--first-position card">
+              <div class="topper-position fw-600 txt-white">1st Position</div>
+              <div class="image">
+                <img
+                  class="topper-image"
+                  src="./assets/images (1) 1.png"
+                  alt="A person"
+                />
+              </div>
+              <div class="topper-name fw-600 fz-1">Charmilie Porter</div>
+              <div class="points fw-500">450</div>
+            </div>
+            <div class="topper topper--third-position card">
+              <div class="topper-position fw-600">3rd Position</div>
+              <div class="image">
+                <img
+                  class="topper-image"
+                  src="./assets/e02mihul20b21 1.png"
+                  alt="A person"
+                />
+              </div>
+              <div class="topper-name fw-600 fz-1">Scott William</div>
+              <div class="points fw-500">350</div>
+            </div>
+          </div>
+        </section>
+        <!-------------------------------------MY RANK------------------------------------>
+        <section class="section-my-rank fz-1">
+          <p class="fw-500 fzuser fz-1">My Rank</p>
+          <div class="grid grid--cols-6 list-headings txt-gray fw-500">
+            <div class="rank">Rank</div>
+            <div class="display-none">Opacity0</div>
+            <dic class="name">Name</dic>
+            <div class="employee-id">Employee ID</div>
+            <div class="department">Department</div>
+            <div class="points">Points</div>
+          </div>
+
+          <div class="user-row-card grid grid--cols-6">
+            <div class="user-rank">#1</div>
+            <img class="user-image" src="./assets/images 1.png" alt="person" />
+            <div class="user-name">Sukhendra Rompally</div>
+            <div class="user-employee-id">SR6825456</div>
+            <div class="user-department">Accounts</div>
+            <div class="user-points">240</div>
+          </div>
+        </section>
+        <!---------------------------------TOP 10 VOLUNTEERS---------------------->
+        <section class="section-top-10 fz-1">
+          <p class="fw-500 fz-1">Top 10 Volunteers</p>
+          <div class="grid grid--cols-6 list-headings txt-gray fw-500">
+            <div class="rank">Rank</div>
+            <div class="display-none">Opacity0</div>
+
+            <div class="name">Name</div>
+            <div class="employee-id">Employee ID</div>
+            <div class="department">Department</div>
+            <div class="points">Points</div>
+          </div>
+
+          <div class="leaderboard-list">
+            <!-- <div class="user-row-card grid grid--cols-5 ">
+            <div class="user-rank">
+              <span> #1</span>
+              <img class="user-image" src="./assets/images 1.png" alt="person" />
+            </div>
+            <p class="user-name">
+              <span>Sukhendra Rompally</span>
+            </p>
+            <p class="user-employee-id">SR6825456</p>
+            <p class="user-department">Accounts</p>
+            <p class="user-points">240</p>
+          </div> -->
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <section class="footer">
+          <div class="hr"></div>
+          <p>Built on Frappe</p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

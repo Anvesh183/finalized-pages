@@ -1,0 +1,19 @@
+@media (max-width: 50rem) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .grid--cols-6 {
+    column-gap: 1rem;
+  }
+}
+
+@media (max-width: 38rem) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid--cols-6 {
+    column-gap: 1rem;
+  }
+}
